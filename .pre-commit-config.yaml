@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-index
+        name: Ruff (index.py)
+        entry: ruff check index.py
+        language: system
+        pass_filenames: false
+        stages: [pre-push]
